@@ -2,6 +2,7 @@ package dmmaycon.com.github.domain;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class NotaFiscal {
 
@@ -12,10 +13,10 @@ public class NotaFiscal {
 	private Emissor emissor;
 	private Cliente cliente;
 
-	private ArrayList<Produto> produtos = new ArrayList<>();
+	private List<Produto> produtos = new ArrayList<>();
 
 	public NotaFiscal(Date dataEmissao, String numero, String chave, Emissor emissor, Cliente cliente,
-			ArrayList<Produto> produtos) {
+			List<Produto> produtos) {
 		this.numero = numero;
 		this.dataEmissao = dataEmissao;
 		this.chave = chave;
@@ -64,11 +65,11 @@ public class NotaFiscal {
 		this.cliente = cliente;
 	}
 
-	public ArrayList<Produto> getProdutos() {
+	public List<Produto> getProdutos() {
 		return produtos;
 	}
 
-	public void setProdutos(ArrayList<Produto> produtos) {
+	public void setProdutos(List<Produto> produtos) {
 		this.produtos = produtos;
 	}
 	
